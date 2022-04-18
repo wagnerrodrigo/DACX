@@ -1,5 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './index.css'
+import '../src/assets/css/tailwind.css'
+import '../src/assets/css/fonts.css'
+import 'animate.css'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use('#app')
+app.mount('#app')
+
