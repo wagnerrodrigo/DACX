@@ -11,6 +11,7 @@ import HelloWorld from './components/HelloWorld.vue'
    <h1 class="text-3xl font-bold underline">
     estou aqui 
   </h1>
+  <router-view/>
 </template>
 
 <style>
