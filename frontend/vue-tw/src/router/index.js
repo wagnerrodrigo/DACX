@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+//import Home from '../views/Home/index.vue'
 
 Vue.use(VueRouter)
 
-const Home = () => import('');
-const Coins = () => import('');
-const Plataforms = () => import('');
-const Exchanges = () => import('');
+const Home = () => import('../views/Home/index.vue');
+const Coins = () => import('../views/Coins/index.vue');
+const Plataforms = () => import('../views/Plataforms/index.vue');
+const Exchanges = () => import('../views/Exchange/index.vue');
 
 
 const routes = [

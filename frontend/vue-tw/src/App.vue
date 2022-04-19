@@ -5,13 +5,13 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <img  class="mx-auto" alt="Vue logo" src="./assets/logo.png" />
+
   <HelloWorld msg="Hello Vue 3 + Vite" />
 
    <h1 class="text-3xl font-bold underline">
     estou aqui 
   </h1>
-  <router-view/>
+  <router-view> </router-view>
 </template>
 
 <style>
