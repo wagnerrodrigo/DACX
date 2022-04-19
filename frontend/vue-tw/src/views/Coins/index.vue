@@ -1,5 +1,5 @@
 <template>
-  asdf
+  <h1>Coins</h1>
   <router-view></router-view>
 </template>
 

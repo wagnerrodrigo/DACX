@@ -1,5 +1,5 @@
 <template>
-  <h1>home e aqui asdf asdfasdf</h1>
+  <h1>Platafroms</h1>
 </template>
 
 <script>
