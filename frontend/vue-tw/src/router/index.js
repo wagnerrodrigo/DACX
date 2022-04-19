@@ -4,6 +4,12 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
+const Home = () => import('');
+const Coins = () => import('');
+const Plataforms = () => import('');
+const Exchanges = () => import('');
+
+
 const routes = [
   {
     path: '/',
@@ -11,12 +17,32 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/coins',
+    name: 'Coins',
+    component: Coins,
+    meta:{
+      hasAuth: true
+    }
+  },
+  {
+    path: '/plataforms',
+    name: 'Plataforms',
+    component: Plataforms,
+    meta: {
+      hasAuth: true
+    }
+  },
+  {
+    path: '/exchange',
+    name: 'Exchange',
+    componet: Exchanges,
+    meta: {
+      hasAuth: true
+    }
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: {name: 'Home'}
   }
 ]
 
